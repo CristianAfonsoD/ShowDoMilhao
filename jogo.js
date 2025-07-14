@@ -95,20 +95,28 @@ function showDoMilhao(){
         console.log(`Jogador: ${nome}`)
         console.log(`\nRodada ${rodadaAtual + 1}`)
         console.log(`Valendo R$${valorRodada},00`)
-        
+        console.log(`Você ganha R$${premio},00 se você parar`)
+        if (rodadaAtual == 0){
+            console.log('Você fica com R$ 0,00 se errar.')
+        } else {
+            console.log(`Você fica com R$${premio - (premios[rodadaAtual] / 2)} se errar.`)
+        }
         console.log(`${perguntasSelecionadas[rodadaAtual].pergunta}`)
         console.log(`${perguntasSelecionadas[rodadaAtual].opcoes}`)
 
-        let resposta = prompt('Digite a letra referente a resposta: ')
+        let resposta = prompt('Digite a letra referente a resposta ou p) para parar: ')
 
         if (resposta == perguntasSelecionadas[rodadaAtual].resposta){
             console.log("\nA resposta está correta!")
             premio += valorRodada
+        } else if(resposta == "p") {
+
         } else {
             console.log('\nA resposta está errada!')
             console.log(`A resposta correta era a alternativa ${perguntasSelecionadas[rodadaAtual].resposta})`)
             console.log(`Você chegou até a ${rodadaAtual + 1}º rodada. `)
             console.log(`Faltavam apenas ${totalRodadas - rodadaAtual - 1} questões!`)
+            premio = premio - (premios[rodadaAtual - 1] / 2)
             break;
         }
         rodadaAtual++
