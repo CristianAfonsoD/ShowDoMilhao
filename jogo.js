@@ -2,81 +2,82 @@ const prompt = require('prompt-sync')();
 
 const perguntas = [
     {
-        pergunta: "Quantos pés tem uma pessoa? ",
-        opcoes: " a) 2   b) 1  c) 2,5 ",
-        resposta: "a"
-    },
-    {
-        pergunta: "Qual a capital do Brasil?",
-        opcoes: "a) São Paulo  b) Brasília   c) Rio de Janeiro",
-        resposta: "b"
-    },
-    {
-        pergunta: "Quem descobriu o Brasil?",
-        opcoes: "a) Pedro Álvares Cabral   b) Manoel Gomes  c) Gustavo Lima",
-        resposta: "a"
-    },
-    {
-        pergunta: "Quanto é 12 x 12?",
-        opcoes: "a) 124  b) 144   c) 122",
-        resposta: "b"
-    },
-    {
-        pergunta: "Qual planeta é conhecido como planeta vermelho?",
-        opcoes: "a) Marte   b) Júpiter  c) Vênus",
-        resposta: "a"
-    },
-    {
-        pergunta: "Em que continente está o Brasil?",
-        opcoes: "a) América do Sul   b) África  c) Europa",
-        resposta: "a"
-    },
-    {
-        pergunta: "Quantos segundos tem um minuto?",
-        opcoes: "a) 120   b) 100  c) 60",
+        pergunta: "Qual é o maior país do mundo em extensão territorial?",
+        opcoes: "a) Brasil   b) Canadá   c) Rússia",
         resposta: "c"
     },
     {
-        pergunta: "Qual animal é conhecido como rei da selva?",
-        opcoes: "a) Tigre  b) Leão   c) Elefante",
-        resposta: "b"
-    },
-    {
-        pergunta: "Quem escreveu 'Dom Casmurro'?",
-        opcoes: "a) Machado de Assis   b) Monteiro Lobato   c) Paulo Coelho",
+        pergunta: "Onde fica localizada a Cordilheira dos Andes?",
+        opcoes: "a) América do Sul   b) América Central   c) América do Norte",
         resposta: "a"
     },
     {
-        pergunta: "Quantos lados tem um hexágono?",
-        opcoes: "a) 4   b) 8  c) 6",
+        pergunta: "Qual é o maior oceano do planeta?",
+        opcoes: "a) Atlântico   b) Índico   c) Pacífico",
         resposta: "c"
     },
     {
-        pergunta: "O que é H2O?",
-        opcoes: "a) Gás carbônico  b) Água   c) Oxigênio",
+        pergunta: "Em que ano o Brasil foi descoberto?",
+        opcoes: "a) 1492   b) 1500   c) 1822",
         resposta: "b"
     },
     {
-        pergunta: "Qual o maior planeta do sistema solar?",
-        opcoes: "a) Saturno  b) Júpiter   c) Marte",
+        pergunta: "Quem foi o primeiro presidente do Brasil?",
+        opcoes: "a) Getúlio Vargas   b) Marechal Deodoro   c) Juscelino Kubitschek",
         resposta: "b"
     },
     {
-        pergunta: "Quem pintou a Mona Lisa?",
-        opcoes: "a) Picasso   b) Leonardo da Vinci    c) Van Gogh",
-        resposta: "b"
-    },
-    {
-        pergunta: "O que significa 'www'?",
-        opcoes: "a) World Web Wave   b) World Wide Web   c) Web World Window",
-        resposta: "b"
-    },
-    {
-        pergunta: "Qual é a cor da clorofila?",
-        opcoes: "a) Verde   b) Azul  c) Amarela",
+        pergunta: "A Revolução Francesa aconteceu em que século?",
+        opcoes: "a) Século XVIII   b) Século XIX   c) Século XVII",
         resposta: "a"
     },
-]
+    {
+        pergunta: "Quanto é 7 x 8?",
+        opcoes: "a) 54   b) 56   c) 58",
+        resposta: "b"
+    },
+    {
+        pergunta: "Qual é a raiz quadrada de 64?",
+        opcoes: "a) 6   b) 8   c) 10",
+        resposta: "b"
+    },
+    {
+        pergunta: "Qual o resultado de (3 + 2) x 4?",
+        opcoes: "a) 20   b) 14   c) 18",
+        resposta: "a"
+    },
+    {
+        pergunta: "Qual palavra está escrita corretamente?",
+        opcoes: "a) Exceção   b) Exessão   c) Excessão",
+        resposta: "a"
+    },
+    {
+        pergunta: "Qual é o plural de 'cidadão'?",
+        opcoes: "a) Cidadões   b) Cidadãos   c) Cidades",
+        resposta: "b"
+    },
+    {
+        pergunta: "Qual classe gramatical da palavra 'felizmente'?",
+        opcoes: "a) Verbo   b) Adjetivo   c) Advérbio",
+        resposta: "c"
+    },
+    {
+        pergunta: "Qual é o metal usado na fabricação de latas de refrigerante?",
+        opcoes: "a) Ferro   b) Alumínio   c) Zinco",
+        resposta: "b"
+    },
+    {
+        pergunta: "Qual órgão do corpo humano é responsável por bombear o sangue?",
+        opcoes: "a) Fígado   b) Coração   c) Pulmão",
+        resposta: "b"
+    },
+    {
+        pergunta: "Quem é o autor de 'O Pequeno Príncipe'?",
+        opcoes: "a) J.K. Rowling   b) Antoine de Saint-Exupéry   c) Monteiro Lobato",
+        resposta: "b"
+    }
+];
+
 
 const premios = [10000, 20000, 30000, 100000, 150000, 690000]
 
